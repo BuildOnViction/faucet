@@ -1,3 +1,4 @@
+const config = require('../../../../config.json')
 $(function() {
 	var loader = $(".loading-container");
 	$( "#faucetForm" ).submit(function( e ) {
@@ -24,7 +25,7 @@ $(function() {
 				$("#receiver").val('');
 				loader.addClass("hidden");
 				swal("Success",
-				  "15 TOMO is successfully transfered to " + receiver +" in Tx<br /><a href='https://scan.testnet.tomochain.com/txs/" + data.success.txHash + "' target='_blank'>" + data.success.txHash + "</a>",
+				  "15 VIC is successfully transfered to " + receiver +` in Tx<br /><a href='${config.Ethereum.live.explorer}/tx/` + data.success.txHash + "' target='_blank'>" + data.success.txHash + "</a>",
 				  "success"
 				);
 				grecaptcha.reset();

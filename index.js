@@ -32,12 +32,12 @@ require('./controllers/index')(app);
 require('./controllers/getTxCallBack')(app);
 
 app.get('/', function(request, response) {
-  response.send('Tomochain testnet  faucet');
+  response.send('Viction testnet  faucet');
 });
 
 app.set('port', (process.env.PORT || 3000));
 
 app.listen(app.get('port'), function () {
-    console.log('Tomochain Testnet faucet is running on port', app.get('port'));
+    console.log('Viction Testnet faucet is running on port', app.get('port'));
 });
 

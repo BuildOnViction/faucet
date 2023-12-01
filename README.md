@@ -1,4 +1,4 @@
-## Tomochain Testnet Faucet
+## Viction Testnet Faucet
 
 ### Building from source
 
